@@ -17,7 +17,7 @@ body{
 }
 
 .searchTerm {
-  width: 400px;
+  width: 100%;
   border: 3px solid #00B4CC;
   border-right: none;
   padding: 5px;
@@ -47,34 +47,22 @@ body{
 .wrap{
   width: 30%;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.searchere{
-    color: #00B4CC;
-    font-family: 'Open Sans', sans-serif;
-
-}
-
-
 </style>
 </head>
 <body>
-    <div class="wrap">
-        <center>
-            <h2 class="searchere">Search Here</h2>
-        </center>
-    <div class="search">
-         
-        <form action="word"> 
-        <input type="text" name="search" class="searchTerm" placeholder="Input Your Word Here">
-        <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
-        </button>
-        </form>
-    </div>
-    </div>
+<div class="wrap">
+   <div class="search">
+     <form action="word">
+      <input type="text" name="search" class="searchTerm" placeholder="Input Your Word Here">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+    </form>
+   </div>
+</div>
 </body>
 </html>
