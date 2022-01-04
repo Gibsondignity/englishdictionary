@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-h3*ex)4-kx1%&yd#nkv1a+66basafit*xa8qzn@wb-r9cn6&x(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -124,3 +125,25 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_URL = '/static/'
+
+ 
+STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
+
+
+#my static file i guess
+STATICFILES_DIRS= (
+    os.path.join(BASE_DIR, "static"),
+)
+
+
+ 
+
+#media url
+MEDIA_URL = '/media/'
+
+#media root
+MEDIA_ROOT =os.path.join(BASE_DIR,"media/")
+
+
